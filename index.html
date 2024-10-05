@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome SCOOBY</title>
+  <link rel="shortcut icon" href="./images/scooby.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Remix icon  link  -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Remix icon  link  -->
+
+  <!-- Tailwind & DaisyUI  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind & DaisyUI  -->
+
+</head>
+<body>
+  <!-- navbar section  -->
+   <header class="sticky top-0">
+    <nav class="relative bg-white shadow">
+      <div class=" max-w-screen-xl px-4 py-5 mx-auto flex justify-between items-center">
+        <div class="flex-1">
+          <a href="#" class="flex items-center text-3xl font-black">
+            <span>SC</span>
+            <span><img src="./images/scooby.png" alt="" class="w-10"></span>
+            <span>BY</span>
+          </a>
+        </div>
+          <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+          <div id="hamburger-menu"
+            class="absolute hidden inset-x-0 top-20 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white  md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ">
+            <div class="flex flex-col md:flex-row items-center md:mx-6 lg:order-1 gap-4">
+              <a href="" class="p-2 rounded-full  border border-gray-200 hover:bg-gray-100 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M2.25 12.0001L11.204 3.04507C11.644 2.60607 12.356 2.60607 12.795 3.04507L21.75 12.0001M4.5 9.75007V19.8751C4.5 20.4961 5.004 21.0001 5.625 21.0001H9.75V16.1251C9.75 15.5041 10.254 15.0001 10.875 15.0001H13.125C13.746 15.0001 14.25 15.5041 14.25 16.1251V21.0001H18.375C18.996 21.0001 19.5 20.4961 19.5 19.8751V9.75007M8.25 21.0001H16.5"
+                    stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="" class="p-2 rounded-full  border border-gray-200 hover:bg-gray-100 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M16.862 4.487L18.549 2.799C18.9007 2.44733 19.3777 2.24976 19.875 2.24976C20.3723 2.24976 20.8493 2.44733 21.201 2.799C21.5527 3.15068 21.7502 3.62766 21.7502 4.125C21.7502 4.62235 21.5527 5.09933 21.201 5.451L6.832 19.82C6.30332 20.3484 5.65137 20.7367 4.935 20.95L2.25 21.75L3.05 19.065C3.26328 18.3486 3.65163 17.6967 4.18 17.168L16.863 4.487H16.862ZM16.862 4.487L19.5 7.125"
+                    stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="" class="p-2 rounded-full  border border-gray-200 hover:bg-gray-100 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                </svg>
+              </a>
+              <a href="" class="p-2 rounded-full  border border-gray-200 hover:bg-gray-100 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M3 3V4.5M3 4.5L5.77 3.807C7.8544 3.28605 10.0564 3.52795 11.978 4.489L12.086 4.543C13.9688 5.4843 16.1219 5.73589 18.171 5.254L21.281 4.522C20.9029 8.01155 20.9046 11.5318 21.286 15.021L18.172 15.753C16.1227 16.2354 13.9692 15.9842 12.086 15.043L11.978 14.989C10.0564 14.028 7.8544 13.786 5.77 14.307L3 15M3 4.5V15M3 21V15"
+                    stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+
+        </div>
+        <!-- Mobile menu button -->
+        
+        <div class="flex gap-3">
+          <div class="flex lg:hidden order-2">
+            <button id="hamburger-btn" type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600 "
+              aria-label="toggle menu">
+              <svg id="open" class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15" />
+              </svg>
+        
+              <svg id="close" class="swap-on fill-current w-7 h-7 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+              </svg>
+            </button>
+          </div>
+        
+          <div class="flex justify-center md:block order-1 lg:order-2">
+            <a class="relative" href="#">
+              <button class="py-2 text-white px-5 rounded-full bg-[#797DFC] hover:bg-[#6367cf] focus:bg-[#6367cf] duration-300 ease-in-out">Sign up</button>
+            </a>
+          </div>       
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner section  -->
+    
+    <!-- Banner section  -->
+   </header>
+  <!-- navbar section  -->
+
+  <main>
+    <!-- Banner section  -->
+      <section class="max-w-screen-xl mx-auto px-4 py-10">
+        <div id="banner"
+          class=" flex gap-5 flex-col h-auto md:h-[700px] px-4 lg:px-10 py-10 mx-auto space-y-6 md:flex-row md:items-center rounded-3xl">
+          <div class="w-full md:w-1/2 lg:flex-1">
+            <div class="lg:max-w-lg space-y-3">
+              <h1 class="text-3xl font-black tracking-wide text-white  lg:text-5xl">
+                Welcome to the <br>
+                <span class="inline-block mt-3">SCOOBY</span>
+                Forum
+              </h1>
+              <p class="text-white">Share your favorite opinion and win and wp <br> forum coffee mug!</p>
+      
+            </div>
+      
+            <div
+              class="w-full mt-8 bg-white rounded-full lg:max-w-sm border-none focus-within:border-blue-400 focus-within:ring-[#6367cf] focus-within:ring-2">
+              <form class="flex flex-row">
+                <input id="search-query" type="email" placeholder="Search here anything..."
+                  class="flex-1 h-10 px-4 py-2 m-1 text-gray-700 font-medium placeholder-gray-400 bg-white border-none appearance-none focus:outline-none focus:placeholder-transparent focus:ring-0 rounded-l-full" />
+      
+                <button onclick="handelSearch()" type="button"
+                  class="h-10 px-5 font-medium py-2 m-1 text-white transition-colors duration-300 bg-[#797DFC] hover:bg-[#6367cf] focus:bg-[#6367cf] rounded-full  focus:outline-none ">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+      
+          <div class="px-8 space-y-4 flex flex-col justify-center py-10 bg-white w-full md:w-1/2 lg:w-1/3 h-80  rounded-xl">
+            <!-- item 1 -->
+            <div class="flex justify-between font-medium">
+              <span>Registered Users</span>
+              <span>110</span>
+            </div>
+            <!-- item 2 -->
+            <div class="flex justify-between font-medium">
+              <span>Forum</span>
+              <span>35</span>
+            </div>
+            <!-- items 3 -->
+            <div class="flex justify-between font-medium">
+              <span>Topics</span>
+              <span>05</span>
+            </div>
+            <!-- item 4 -->
+            <div class="flex justify-between font-medium">
+              <span>Replies</span>
+              <span>40</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Banner section  -->
+
+    <!-- let's discuss section  -->
+    <section class="max-w-screen-xl mx-auto px-4 py-10">
+      <h3 class="text-[#12132D] font-black text-4xl text-center">Let’s Discuss</h3>
+      <p class="font-normal text-center max-w-[690px] mx-auto mt-3 text-lg text-gray-500">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a
+      streamlined .</p>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6  mt-12">
+        <!--  Post section -->
+        <div id="loading-container" class="lg:col-span-2 rounded-md space-y-4 hidden text-center">
+          <span class="loading loading-bars loading-lg"></span>
+        </div>
+        <div id="discuss-post-container" class=" lg:col-span-2 rounded-md space-y-4">
+
+
+          <!-- <div class="flex flex-col overflow-hidden bg-[#F3F3F5] shadow-md sm:flex-row text-slate-500 shadow-slate-200 p-8 rounded-xl border border-[#797DFC]">
+            
+            <figure class="">
+              <img src="https://i.pravatar.cc/48?img=24" alt="user name" title="user name"
+                class="w-16 h-16 rounded-md" />
+            </figure>
+            <div class="flex-1 sm:mx-6 sm:px-0">
+              <div class="flex gap-8 text-[#12132D] font-medium mb-2">
+                <p>
+                  <span>#</span>
+                  <span>Music</span>
+                </p>
+                <p>
+                  <span>Author:</span>
+                  <span>Jane doe</span>
+                </p>
+              </div>
+              <div class="gap-4 pb-4 border-b-2 border-dashed">
+                  <h3 class="text-xl mb-3 font-bold text-[#12132D]">10 Kids Unaware of Their Halloween Costume</h3>
+                  <p class="font-normal text-base">
+                    After a walk through history, there is nothing left to do but admire the hypnotizing landscapes that exist in
+                    every direction. From vast deserts to rainbow mountains, and everything in between.
+                  </p>
+              </div>
+              <div class="flex justify-between mt-4">
+
+               <div class="flex-1 flex gap-6 items-center">
+                <div>
+                  <span><i class="ri-message-2-line text-xl align-middle"></i></span>
+                  <span>560</span>
+                </div>
+                <div>
+                  <span><i class="ri-eye-line text-xl align-middle"></i></span>
+                  <span>560</span>
+                </div>
+                <div>
+                  <span><i class="ri-history-line text-xl align-middle"></i></span>
+                  <span>560</span>
+                </div>
+
+               </div>
+               <div class="flex flex-col">
+                  <button><i class="ri-mail-close-line text-xl align-middle p-1 bg-green-400 rounded-full text-white"></i></button>
+                  <button><i class="ri-mail-open-line text-xl hidden align-middle p-1 bg-green-400 rounded-full text-white"></i></b>
+               </div>
+
+
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+        <!-- check read section -->
+        <div>
+          <div class=" min-h-96 p-6 rounded-md bg-[#f3f3f4] w-full md:w-2/3 lg:w-full">
+            <div class="flex justify-between">
+              <h5 class="font-bold text-xl text-black">Title</h5>
+              <p id="read-count-text-color" class="font-medium text-gray-400">
+                <span><i class="ri-check-double-fill"></i></span>
+                <span>Mark as read</span>
+                <span id="read-count-display">00</span>
+              </p>
+            </div>
+          
+            <!-- Show read history -->
+            <div id="read-history-btn" class="mt-6 space-y-3">
+          
+              <!-- <div class="flex bg-white gap-4 p-4 items-center rounded-xl">
+                <p class="text-[#12132D] font-medium">10 Kids Unaware of Their Halloween Costume</p>
+                <p class="flex gap-2 text-gray-500">
+                  <span class="align-middle text-xl"><i class="ri-eye-line"></i></span>
+                  <span>1568</span>
+                </p>
+              </div> -->
+          
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- let's discuss section  -->
+
+    <!-- Join our forum  -->
+     <section class="max-w-screen-xl mx-auto px-4 py-10">
+        <div id="" class="p-11 flex flex-col md:flex-row justify-between bg-[#12132D] items-center rounded-xl space-y-6 md:space-y-0">
+          <div class="space-y-4">
+            <h3 class="text-white font-bold text-3xl">Join Our Forum</h3>
+            <p class="text-white font-medium max-w-[650px]">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly
+            within the app.</p>
+            <button class="py-2 text-white px-8 rounded-full bg-[#797DFC] hover:bg-[#6367cf] focus:bg-[#6367cf] duration-300 ease-in-out">Registered Now <i class="ri-arrow-right-line align-middle"></i></button>
+          </div>
+
+          <div>
+            <img src="./images/joinforum.png" alt="">
+          </div>
+        </div>
+     </section>
+    <!-- Join our forum  -->
+
+    <!-- Lasted post section  -->
+     <section class="max-w-screen-xl mx-auto px-4 py-10">
+        <h3 class="text-[#12132D] font-black text-4xl text-center">Latest Posts</h3>
+        <p class="font-normal text-center max-w-[690px] mx-auto mt-3 text-lg text-gray-500">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a
+        streamlined .</p>
+
+        <!-- Lasted post  -->
+         <div id="lasted-post-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-6">
+          
+          <!-- <div class="p-4 bg-base-100 shadow border border-gray-100 rounded-xl">
+            <figure>
+              <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" class="rounded-xl"/>
+            </figure>
+            <div class=" py-4 space-y-3">
+              <p class="text-gray-400">
+                <span><i class="ri-calendar-todo-line text-lg align-middle"></i></span>
+                <span>29 January 2024</span>
+              </p>
+              <h2 class="font-extrabold text-lg text-[#12132D]">What will a mars habitat force that impact in our daily life!!!</h2>
+              <p class="text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
+              <div class="flex gap-4">
+                <img src="" alt="" class="w-12 h-12 rounded-full">
+                <div>
+                  <h4 class="text-[#12132D] text-base font-bold">Cameron Williamson</h4>
+                  <p class="text-gray-500">Unknown</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+         </div>
+     </section>
+    <!-- Lasted post section  -->
+  </main>
+
+  <!-- Footer section  -->
+  <footer class="w-full">
+    <!-- Main footer -->
+    <div class=" pt-16 pb-12 bg-[#f2f2ff]">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div class="flex flex-col justify-center items-center text-black">
+          <a href="#" class="flex items-center">
+            <span class="text-4xl font-extrabold">SC</span>
+            <span><img src="./images/scooby.png" alt="" class="w-11"></span>
+            <span class="text-4xl font-extrabold">BY</span>
+          </a>
+          <p class="max-w-[600px] mx-auto text-center mt-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+          from 45 BC</p>
+          <a class="relative" href="#">
+            <button
+              class="py-2 text-white px-8 mt-3 rounded-full bg-[#797DFC] hover:bg-[#6367cf] focus:bg-[#6367cf] duration-300 ease-in-out"> Follow us
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom -->
+    <div class="py-4 text-sm  bg-[#797DFC]">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div class="flex justify-between items-center gap-2">
+          <div class="text-white">&copy; Copyright 2024. SCOOBY All right reserved</div>
+          <nav class="">
+            <ul class="flex items-center justify-end gap-2 md:gap-4">
+              <li class="duration-300 hover:-translate-y-1">
+                <a href="" class="">
+                  <i class="ri-facebook-fill p-2 border border-[#797DFC] rounded-full bg-[#8387fb] text-lg text-white"></i>
+                </a>
+              </li>
+              <li class="duration-300 hover:-translate-y-1">
+                <a href="" class="">
+                  <i class="ri-twitter-fill p-2 border border-[#797DFC] rounded-full bg-[#8387fb] text-lg text-white"></i>
+                </a>
+              </li>
+              <li class="duration-300 hover:-translate-y-1">
+                <a href="" class="">
+                  <i class="ri-instagram-line p-2 border border-[#797DFC] rounded-full bg-[#8387fb] text-lg text-white"></i>
+                </a>
+              </li>
+              <li class="duration-300 hover:-translate-y-1">
+                <a href="" class="">
+                  <i class="ri-github-fill p-2 border border-[#797DFC] rounded-full bg-[#8387fb] text-lg text-white"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer section  -->
+
+  <!-- Js file  -->
+   <script src="./js/app.js"></script>
+</body>
+</html>
